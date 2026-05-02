@@ -66,7 +66,7 @@ namespace picacomic
             Punch punch = await PicacomicUrl.Punch(); 
             if (punch.PunchSuccess)
             {
-                Log("签到完成");
+                Log("签到完成!");
                 Profile profile_punch = await PicacomicUrl.Profile();
                 Log($"等级：{profile_punch.User.Level}");
                 Log($"当前经验：{profile_punch.User.Exp}");
@@ -78,3 +78,4 @@ namespace picacomic
         }
     }
 }
+
